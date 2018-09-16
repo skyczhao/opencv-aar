@@ -1,7 +1,10 @@
 .idea/
+.gradle/
 .DS\_Store/
 target/
 *.swp
 *.iml
 *.log
 *.log.*
+/build
+/app/build
