@@ -15,7 +15,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
-
+    sourceSets {
+        main {
+            // 引入opencv lib, 需要android ndk支持
+            jniLibs.srcDirs += ['/Users/tobin/ProgramFiles/OpenCV-android-sdk/sdk/native/libs']
+        }
+    }
     lintOptions {
         abortOnError false
     }
